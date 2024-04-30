@@ -1,0 +1,17 @@
+.nav-tabs{
+    --bs-nav-tabs-border-color: none;
+    --bs-nav-tabs-border-width: none;
+    --bs-nav-tabs-link-active-color: #fff;
+    --bs-nav-tabs-link-active-bg: none;
+    margin-right: 46px;
+}
+
+.nav{
+    --bs-nav-link-color:#64686b;
+    --bs-nav-link-hover-color : rgba(255, 255, 255, 0.8); 
+}
+
+.navbar-brand{
+    color: #fff;
+    margin-left: 46px;
+}
