@@ -1,60 +1,54 @@
 import React from "react";
-import heroBg from '../assets/image/hero-bg.jpg';
 import johnDoeImage from '../assets/image/john-doe-about.jpg';
 import '../stylesCss/home.css';
 
 
 export default function Home() {
     return (
-
         <>
-            <div className="background-container">
 
-                <img src={heroBg} alt="personnage devant son écran"/>
+            <section className="background-container d-flex justify-content-center align-items-center" >
+
                 <div className="superposition-noire"></div>
 
-                <div className="content-container">
+                <div className="content-container d-flex flex-column align-items-center gap-3">
 
-                    <section className="d-flex justify-content-center align-items-center" >
+                    <div className="col-9 col-md-11 col-lg-12">
+                        <h1>Bonjour, je suis John Doe</h1>
+                    </div>
 
-                        <div className="d-flex flex-column align-items-center gap-3">
+                    <div className="col-12 col-md-12 col-lg-12">
+                        <h2> Développeur web full stack </h2>
+                    </div>
 
-                            <div className="main-subtitle">
-                                <h1>Bonjour, je suis John Doe</h1>
-                            </div>
-
-                            <div className="main-title">
-                                <h2> Développeur web full stack </h2>
-                            </div>
-
-                            <a href="#a-propos" className='bouton-savoir-plus-home btn btn-primary text-light'>En savoir plus</a>
-
-                        </div>
-
-                    </section>
+                    <a href="#a-propos" className='bouton-savoir-plus-home btn btn-primary text-light'>En savoir plus</a>
 
                 </div>
 
-            </div>
+            </section>
 
 
-            <section className="gap-5 d-flex align-items-center justify-content-center mb-5" id="a-propos">
+            <section className="d-flex align-items-center justify-content-center mb-5 gap-5" id="a-propos">
 
-                <div className="a-propos rounded-2 d-flex justify-content-evenly flex-column flex-md-row col-md-11 flex-lg-row p-4 mt-5 border-0 col-12 col-xl-11">
+                <div className="a-propos d-flex justify-content-evenly flex-column flex-md-row flex-lg-row rounded-2 p-4 mt-5 border-0 p-5 col-12 col-md-11 col-lg-11 col-xl-11">
 
-                    <div className="d-flex flex-column col-lg-5 col-md-6 gap-5">
+                    <div className="d-flex flex-column gap-3 col-md-7 col-lg-7 col-xl-4">
 
-                        <div className="titre-section-a-propos">
+                        <div className="titre-section-a-propos col-md-11 col-lg-11 col-xl-12">
                             <h3>À propos</h3>
                             <hr />
                         </div>
 
-                        <div className="col-lg-11 fs-4 d-flex flex-column gap-2">
+                        <div className="d-flex flex-column gap-2 col-md-11 col-lg-10 col-xl-12">
                             <p>
-                                Passionné par l'informatique et les nouvelles <br />technologies, j'ai suivi une formation d'<strong>intégrateur-développeur web</strong> au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du dévelopemment web.
+                                Passionné par l'informatique et les nouvelles technologies, 
+                                j'ai suivi une formation d'<strong>intégrateur-développeur web</strong> au CEF.
+                                Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du
+                                <strong>dévelopemment web.</strong>
                             </p>
                             <p>
-                                Basé à Lyon, je suis en recherche d'une alternance au sein d'une agence digitale pour consolider ma formation de <strong>développeur web full stack.</strong>
+                                Basé à Lyon, je suis en recherche d'une alternance au sein d'une agence digitale pour consolider ma formation 
+                                de <strong>développeur web full stack.</strong>
                             </p>
                             <p>
                                 J'accorde une attention particulière à la qualité du code que j'écris et je respecte les bonnes pratiques du web.
@@ -63,9 +57,9 @@ export default function Home() {
 
                     </div>
 
-                    <div className="col-md-5 col-lg-6">
+                    <div className="col-11 col-md-5 col-lg-5 col-xl-7">
 
-                        <img className="rounded-2 col-12 col-lg-12" src={johnDoeImage} alt="John Doe" />
+                        <img className="rounded-2 col-12 col-md-12 col-lg-12 col-xl-12" src={johnDoeImage} alt="John Doe" />
 
                         <h3 className="mt-2">Mes compétences</h3>
 
@@ -108,7 +102,7 @@ export default function Home() {
                             </div>
 
                         </div>
-                        
+
                     </div>
 
                 </div>
