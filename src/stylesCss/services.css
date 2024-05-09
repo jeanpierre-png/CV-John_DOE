@@ -2,19 +2,28 @@
     color:black;
 }
 
-.card, .card-body{
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-   
-  
+.ligne-blue{
+    border: 1.5px solid #0d6efd;
+}
+
+.text-intro{
+    margin-bottom: 6px; 
+}
+
+.banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+}
+
+span{
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
 }
 
 .card{
-
-    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.165);
-     padding: 0px;
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.13);
 }
 
 .icones{
@@ -22,7 +31,26 @@
     margin-bottom: 20px;
 }
 
-/*:hover{
-    background-color: #cde1f8;
+@media only screen and (min-width: 1024px) {
+    /* Styles pour les écrans de bureau */
+    .banner{
+        background-image: url(../assets/image/banner.jpg);
+        height: 200px;
+    }
+}
 
-}*/
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+    /* Styles pour les tablettes */
+    .banner{
+      background-image: url(../assets/image/banner-tablette.jpg);
+      height: 300px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    /* Styles pour les écrans de mobile */
+    .banner{    
+        background-image: url(../assets/image/banner-mobile.jpg);
+        height: 100px;
+    }
+}
