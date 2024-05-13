@@ -1,6 +1,5 @@
 import React from "react";
 import Portfolio from "../components/Portfolio";
-import bannerImage from "../assets/image/banner.jpg";
 import fresh_food from "../assets/portfolio/fresh-food.jpg";
 import restaurant_akira from "../assets/portfolio/restaurant-japonais.jpg";
 import espace_bien_etre from "../assets/portfolio/espace-bien-etre.jpg";
@@ -10,25 +9,23 @@ import "../stylesCss/realisations.css";
 export default function Realisations() {
     return (
 
-
-
         <section>
 
-            <img className="image-banner" src={bannerImage} alt='banner' ></img>
+            <div className="banner"></div>
 
-            <div>
+            <div className="text-center m-5 mb-2">
 
                 <h2 className="main-title mt-5">PORTFOLIO</h2>
 
-                <div className="d-flex justify-content-center align-items-center text-center mt-3" >
+                <div className="d-flex justify-content-center align-items-center text-center" >
                     <p>Voici quelques-unes de mes réalisations.</p>
                 </div>
 
-                <hr className="mx-auto m-0" style={{ width: "14%" }} />
+                <hr className="trait-2 mx-auto m-0" style={{ width: "18%" }} />
 
             </div>
 
-            <article className="d-flex justify-content-center align-items-center flex-column flex-sm-column flex-md-row flex-lg-row flex-md-wrap align-items-md-baseline gap-3 mt-5 mb-5 col-12 col-lg-12 justify-content-lg-center">
+            <article className="content-art d-flex align-items-center flex-column gap-4 mb-5 mt-5 flex-md-row flex-md-wrap justify-content-md-start align-items-md-baseline col-lg-12 flex-lg-row justify-content-lg-center align-items-lg-baseline">
 
                 <Portfolio
 
@@ -63,8 +60,6 @@ export default function Realisations() {
             </article>
 
         </section>
-
-
 
     );
 }
