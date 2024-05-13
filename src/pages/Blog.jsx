@@ -1,6 +1,5 @@
 import React from "react";
 import ArticleBlog from "../components/ArticleBlog";
-import bannerImage from "../assets/image/banner.jpg";
 import coder from "../assets/blog/coder.jpg";
 import produit from "../assets/blog/croissance.jpg";
 import google from "../assets/blog/google.jpg";
@@ -18,23 +17,21 @@ export default function Blog() {
 
         <section>
 
-            <img className="image-banner" src={bannerImage} alt='banner' ></img>
+           <div className="banner"></div>
 
             <div>
+                <h2 className="main-title mt-5 d-flex justify-content-center align-items-center fs-1">BLOG</h2>
 
-                <h2 className="main-title mt-5">BLOG</h2>
-
-                <div className="d-flex justify-content-center align-items-center text-center mt-3" >
+                <div className="d-flex justify-content-center align-items-center text-center mt-1" >
                     <p>Retrouvez ici quelques articles sur le développement web.</p>
                 </div>
 
-                <hr className="mx-auto m-0" style={{ width: "14%" }} />
-
+                <hr className="ligne-blue mx-auto" style={{ width: "14%" }} />
             </div>
 
-            <article className="d-flex flex-wrap justify-content-center align-items-start gap-2 mt-5 mb-5">
+            <article className="d-flex flex-wrap gap-2 mt-5 mb-5">
 
-                <div className="row row-cols-1 row-cols-md-3 align-items-lg-baseline m-0 g-4 p-3">
+                <div className="row row-cols-1 row-cols-md-3 justify-content-center align-items-baseline m-0">
 
                     <ArticleBlog
 
@@ -95,6 +92,7 @@ export default function Blog() {
                         date_publication="Publié le 12 juillet 2022"
 
                     />
+                    
                 </div>
 
             </article>

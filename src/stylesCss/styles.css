@@ -7,7 +7,7 @@ h1, h2, h3, strong{
     font-weight: 600;
 }
 
-p, a{
+p, a, small{
     font-family: "Nunito Sans", sans-serif ;
     font-weight: 400;
 }
