@@ -1,77 +1,69 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../stylesCss/nav.css";
-import favicon from "../assets/image/favicon.png";
-
 
 export default function Navbar() {
-    // État local pour suivre quel lien est actuellement actif
-    const [activesLink, ActiveLink] = useState("");
 
-    // Fonction pour mettre à jour l'état de l'onglet actif
-    const Active = (link) => {
-        ActiveLink(link);
+    // Pour suivre quel lien est actuellement actif
+    const [activesLink, setActiveLink] = useState("");
+
+    // Fonction pour mettre à jour l'état de l'onglet actif lors d'un clique 
+    const linkClick = (link) => {
+        setActiveLink(link);
     };
 
     return (
-        <nav className="navbar bg-dark" data-bs-theme="dark">
-
-            <div className="container-fluid mt-2">
-
-                <h1 className="navbar-brand "><img src={favicon}></img>JOHN DOE</h1>
-
-                <div className="nav nav-tabs" id="nav-tab" role="tablist">
-
-                    <Link
-                        className={`nav-link ${activesLink === "home" ? "active" : ""}`}
-                        aria-selected={activesLink === "home"}
-                        to="/"
-                        onClick={() => Active("home")}
-                    >
-                        Accueil
-                    </Link>
-
-                    <Link
-                        className={`nav-link ${activesLink === "services" ? "active" : ""}`}
-                        aria-selected={activesLink === "services"}
-                        to="/services"
-                        onClick={() => Active("services")}
-                    >
-                        Services
-                    </Link>
-
-                    <Link
-                        className={`nav-link ${activesLink === "réalisations" ? "active" : ""}`}
-                        aria-selected={activesLink === "réalisations"}
-                        to="/réalisations"
-                        onClick={() => Active("réalisations")}
-                    >
-                        Réalisations
-                    </Link>
-
-                    <Link
-                        className={`nav-link ${activesLink === "blog" ? "active" : ""}`}
-                        aria-selected={activesLink === "blog"}
-                        to="/blog"
-                        onClick={() => Active("blog")}
-                    >
-                        Blog
-                    </Link>
-
-                    <Link
-                        className={`nav-link ${activesLink === "contacter" ? "active" : ""}`}
-                        aria-selected={activesLink === "contacter"}
-                        to="/contacter"
-                        onClick={() => Active("contacter")}
-                    >
-                        Me Contacter
-                    </Link>
-
+        <nav className="navbar navbar-expand-lg px-lg-5 navbar-dark bg-dark">
+            <div className="container-fluid">
+                <Link className="navbar-brand" to="/">JOHN DOE</Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div className="navbar-nav gap-1">
+                        <Link
+                            className={`nav-link ${activesLink === "home" ? "active" : ""}`}
+                            aria-current={activesLink === "home" ? "page" : ""}
+                            to="/"
+                            onClick={() => linkClick("home")}
+                        >
+                            ACCUEIL
+                        </Link>
+                        <Link
+                            className={`nav-link ${activesLink === "services" ? "active" : ""}`}
+                            aria-current={activesLink === "services" ? "page" : ""}
+                            to="/services"
+                            onClick={() => linkClick("services")}
+                        >
+                            SERVICES
+                        </Link>
+                        <Link
+                            className={`nav-link ${activesLink === "réalisations" ? "active" : ""}`}
+                            aria-current={activesLink === "réalisations" ? "page" : ""}
+                            to="/réalisations"
+                            onClick={() => linkClick("réalisations")}
+                        >
+                            RÉALISATIONS
+                        </Link>
+                        <Link
+                            className={`nav-link ${activesLink === "blog" ? "active" : ""}`}
+                            aria-current={activesLink === "blog" ? "page" : ""}
+                            to="/blog"
+                            onClick={() => linkClick("blog")}
+                        >
+                            BLOG
+                        </Link>
+                        <Link
+                            className={`nav-link ${activesLink === "contacter" ? "active" : ""}`}
+                            aria-current={activesLink === "contacter" ? "page" : ""}
+                            to="/contacter"
+                            onClick={() => linkClick("contacter")}
+                        >
+                            ME CONTACTER
+                        </Link>
+                    </div>
                 </div>
-
             </div>
-
         </nav>
     );
 }
-

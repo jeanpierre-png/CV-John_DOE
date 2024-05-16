@@ -13,5 +13,8 @@
 
 .navbar-brand{
     color: #fff;
-    margin-left: 46px;
+}
+
+.navbar-collapse{
+    margin-left: 12px;
 }
