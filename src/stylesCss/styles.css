@@ -12,3 +12,12 @@ p, a, small, textarea, input, address{
     font-weight: 400;
 }
 
+.scroll-btn{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.arrow{
+    height: 15px;
+}
