@@ -19,14 +19,15 @@ export default function Footer() {
                     <h3 className='fs-5'>John Doe</h3>
                     <address className="col-7 col-md-6 m-0">
                         <a className="bloc-footer" href="https://maps.app.goo.gl/nL94idcaVvr5Q24u6" target="_blank">
-                        40 rue Laure Diebold
-                        69009 Lyon, France</a>
+                            40 rue Laure Diebold
+                            69009 Lyon, France</a>
                     </address>
 
-                    <a className="bloc-footer col-md-12" href="tel:0620304050">Téléphone : 06 20 30 40 50</a>  
+                    <a className="bloc-footer col-md-12" href="tel:0620304050">Téléphone : 06 20 30 40 50</a>
 
                     <div className='d-flex gap-4 mt-3 mb-1 m-md-0 mt-md-4'>
-                        <Link to="/github-john-doe" rel="noreferrer"><img className="img" src={github} alt="github" /></Link>
+
+                       <Link to="/github-john-doe" rel="noreferrer"><img className="img" src={github} alt="github" /></Link>
 
                         <a className="text-dark" target="_blank" rel="noreferrer" href="http://twitter.com/"><img className="img" src={twitter} alt="twitter" /></a>
                         <a className="text-dark" target="_blank" rel="noreferrer" href="http://linkedin.com/"><img className="img" src={linkeldin} alt="linkedin" /></a>
