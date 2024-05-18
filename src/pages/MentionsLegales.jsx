@@ -32,9 +32,8 @@ export default function MentionsLegales() {
                         <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 <h4>John Doe</h4>
-                                <address className="m-0">
-                                    <img className="icone" src={marqueur} alt="marqueur" />40 Rue Laure Diebold <br />
-                                    69009 Lyon, France
+                                <address className="m-0 col-7 col-md-4 col-lg-2">
+                                    <img className="icone" src={marqueur} alt="marqueur" />40 Rue Laure Diebold 69009 Lyon, France
                                 </address>
                                 <div>
                                     <a href="tel:06 20 30 40 50"><img className="icone" src={telephone} alt="télephone" /> 06 20 30 40 50</a>
@@ -56,9 +55,8 @@ export default function MentionsLegales() {
                             <div className="accordion-body">
 
                                 <h4>Always Data</h4>
-                                <address>
-                                    91 rue du Faubourg Saint-Honoré <br />
-                                    75008 Paris
+                                <address className="col-10 col-md-6 col-lg-3">
+                                    91 rue du Faubourg Saint Honoré 75008 Paris
                                 </address>
 
                                 <div>
@@ -78,12 +76,12 @@ export default function MentionsLegales() {
                             <div className="accordion-body">
 
                                 <h4>Crédits</h4>
-                                <p>
+                                <p className="col-12">
                                     Site développé par John Doe, étudiant du CEF.
                                 </p>
 
                                 <div>
-                                    <p> Les images libres de droit sont issues du site <a href="Pixabay">Pixabay</a>.</p>
+                                    <p className="col-12"> Les images libres de droit sont issues du site <a href="Pixabay">Pixabay</a>.</p>
                                 </div>
 
                             </div>
